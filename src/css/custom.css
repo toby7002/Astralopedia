@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900);
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #c382f0;
   --ifm-color-primary-dark: #ad54eb;
