@@ -19,10 +19,10 @@ export default function Home() {
 						baseHue={200}
 						className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
 					>
-						<h2 className="text-white text-6xl md:text-7xl font-semibold text-center">
+						<h2 className="text-white text-3xl sm:text-7xl font-semibold text-center">
 							Astralopedia
 						</h2>
-						<p className="text-white text-2xl max-w-xl mt-6 text-center">
+						<p className="text-white text-xl sm:text-3xl max-w-2xl mt-6 text-center">
 							A guide and information database for the Create:
 							Astral modpack for Minecraft, written and maintained
 							by the players.
@@ -40,7 +40,7 @@ export default function Home() {
 						</div>
 					</Vortex>
 				</div>
-				<h1 className="text-4xl text-center text-white font-semibold mb-24">
+				<h1 className="text-3xl sm:text-5xl text-center text-white font-semibold mb-24">
 					Topics
 				</h1>
 				<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">

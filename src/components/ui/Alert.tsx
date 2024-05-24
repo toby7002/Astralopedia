@@ -14,7 +14,8 @@ export default function Alert() {
 	return (
 		<div
 			className={cn(
-				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2", alertBox ? "block": "hidden"
+				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2",
+				alertBox ? "block" : "hidden",
 			)}
 			style={{ transform: "translate(-50%, -50%)" }}
 		>
