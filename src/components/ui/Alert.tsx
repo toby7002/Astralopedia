@@ -3,19 +3,18 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Alert() {
-	const [alertBox, setAlertBox] = useState<boolean>(true);
+	const [alertBox, setAlertBox] = useState<boolean>(false);
 
 	useEffect(() => {
-		if (localStorage.getItem("showAlertBox") == "false") {
-			setAlertBox(false);
+		if (localStorage.getItem("showAlertBox") !== "false") {
+			setAlertBox(true);
 		}
 	});
 
 	return (
 		<div
 			className={cn(
-				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2 hidden",
-				alertBox && "block",
+				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2", alertBox ? "block": "hidden"
 			)}
 			style={{ transform: "translate(-50%, -50%)" }}
 		>
