@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Infinite Liquid
 
+_This guide was written by Ethanicuss, NikWas in official wiki_
+
 Infinite Liquids, especially lava, are essential to mid- and late-game in astral. A lake of liquid with a minimum volume of 10,000 liquid blocks counts as infinite. An attached hose pulley, when set up properly, will be able to take out an infinite amount of liquid from a pool of this size.
 
 ## The set up
