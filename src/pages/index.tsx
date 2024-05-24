@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<>
 			<Alert />
-			<div className="bg z-0">
+			<div className="bg z-0 overflow-x-hidden">
 				<div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden">
 					<Vortex
 						backgroundColor="transparent"
@@ -43,7 +43,7 @@ export default function Home() {
 				<h1 className="text-4xl text-center text-white font-semibold mb-24">
 					Topics
 				</h1>
-				<div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+				<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 					<PinContainer
 						title="Guides"
 						href="docs/guides/InfiniteLiquid"
