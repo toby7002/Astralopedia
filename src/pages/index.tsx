@@ -29,7 +29,7 @@ export default function Home() {
 						</p>
 						<div className="flex items-center mt-6">
 							<a
-								href="docs/intro"
+								href="docs"
 								className="h-12 w-36 overflow-hidden"
 							>
 								<span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#c382f0] text-lg font-medium text-white">
@@ -48,7 +48,7 @@ export default function Home() {
 						title="Guides"
 						href="docs/guides/InfiniteLiquid"
 					>
-						<div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+						<div className="flex basis-full flex-col p-4  sm:basis-1/2 w-[20rem] h-[20rem] ">
 							<img src={telescope} alt="icon" />
 						</div>
 					</PinContainer>
@@ -56,7 +56,7 @@ export default function Home() {
 						title="Chapters"
 						href="docs/chapters/ComingSoon"
 					>
-						<div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+						<div className="flex basis-full flex-col p-4 sm:basis-1/2 w-[20rem] h-[20rem] ">
 							<img src={astronaut_with_human} alt="icon" />
 						</div>
 					</PinContainer>
@@ -64,7 +64,7 @@ export default function Home() {
 						title="Planets"
 						href="docs/planets/ComingSoon"
 					>
-						<div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+						<div className="flex basis-full flex-col p-4 sm:basis-1/2 w-[20rem] h-[20rem] ">
 							<img src={portal} alt="icon" />
 						</div>
 					</PinContainer>
