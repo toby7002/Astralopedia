@@ -12,7 +12,7 @@ export default function DocRootLayout({ children }: Props): JSX.Element {
 	const sidebar = useDocsSidebar();
 	const [hiddenSidebarContainer, setHiddenSidebarContainer] = useState(false);
 	return (
-		<div className={clsx(styles.docsWrapper, "#bg-[#0E1826]")}>
+		<div className={clsx(styles.docsWrapper, "bg-[#0E1826]")}>
 			<BackToTopButton />
 			<div className={styles.docRoot}>
 				{sidebar && (
