@@ -8,13 +8,13 @@ Key component of ME network is devices that are connected to it.
 
 ## ME Drive and ME Chest
 
-<img src="https://createastral.wiki.gg/images/d/d6/Ae2_me_chest_and_drive.png" />
+<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@main/images/ae2/me_chest_and_drive.png" />
 
 ME Drive and ME Chest are means of making storage cells available to network; drive features 10 slots, while chest has built-in interface for interacting with cell inserted into it.
 
 ## Storage bus
 
-<img src="https://createastral.wiki.gg/images/9/9a/Ae2_storage_bus.png" />
+<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@main/images/ae2/storage_bus.png" />
 
 Similarly to ME Drive and ME Chest, this device's purpose is adding storage; unlike previously mentioned blocks, this is one of many *panels* - devices mounted on cable itself. Storage bus gives access to inventory or fluid storage it is facing from network.
 

@@ -6,4 +6,4 @@ sidebar_position: 1
 
 _This guide was written by KonSola5 in official wiki_
 
-<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@main/images/generators.png" />
+<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@main/images/tr/generators.png" />
