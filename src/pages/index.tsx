@@ -1,15 +1,26 @@
 import { PinContainer } from "../components/ui/PinContainer";
 import { Vortex } from "../components/ui/Vortex";
+import { ToggleButton } from "../components/ui/ToggleButton";
+import { ToggleProvider } from '../components/ui/ToggleContext'
+
+
+
+
 
 import telescope from "../assets/img/telescope.webp";
 import portal from "../assets/img/portal.gif";
 import astronaut_with_human from "../assets/img/astronaut_and_rocket.gif";
 import Alert from "../components/ui/Alert";
 
+
 export default function Home() {
 	return (
 		<>
-			<Alert />
+			<ToggleProvider>
+				<Alert />
+				
+		
+			
 			<div className="bg z-0 overflow-x-hidden">
 				<div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden">
 					<Vortex
@@ -22,6 +33,8 @@ export default function Home() {
 						<h2 className="text-white text-3xl sm:text-7xl font-semibold text-center">
 							Astralopedia
 						</h2>
+
+			
 						<p className="text-white text-xl sm:text-3xl max-w-2xl mt-6 text-center">
 							A guide and information database for the Create:
 							Astral modpack for Minecraft, written and maintained
@@ -82,8 +95,10 @@ export default function Home() {
 							toby7002
 						</a>
 					</p>
+					<ToggleButton/>
 				</div>
 			</div>
+			</ToggleProvider>
 		</>
 	);
 }

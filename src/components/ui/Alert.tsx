@@ -1,14 +1,26 @@
 import cn from "@site/src/utils/cn";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { ToggleButton } from './ToggleButton';
+
+
+
+let alertBoxVisable = true;
 
 export default function Alert() {
-	const [alertBox, setAlertBox] = useState<boolean>(false);
-
+	const [alertBox, toggleAlertBox] = useState<boolean>(false);
+	
+	console.log(alertBoxVisable)
+	
 	useEffect(() => {
-		if (localStorage.getItem("showAlertBox") !== "false") {
-			setAlertBox(true);
+		if (alertBoxVisable) {
+			console.log(alertBoxVisable)
+			if (localStorage.getItem("toggleAlertBox") == "true") {
+				toggleAlertBox(true);
+			}
 		}
+
+
 	});
 
 	return (
@@ -37,20 +49,24 @@ export default function Alert() {
 
 					<button
 						onClick={() => {
-							localStorage.setItem("showAlertBox", "false");
-							setAlertBox(false);
+							alertBoxVisable = false
+							toggleAlertBox(false)
+							
 						}}
 						className="border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-20 h-8"
 					>
 						Close
 					</button>
+
+					<ToggleButton />	
+
 					<Meteors number={28} />
 				</div>
 			</div>
 		</div>
 	);
 }
-
+ 
 const Meteors = ({
 	number,
 	className,
