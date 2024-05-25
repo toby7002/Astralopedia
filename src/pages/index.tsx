@@ -5,6 +5,7 @@ import telescope from "../assets/img/telescope.webp";
 import portal from "../assets/img/portal.gif";
 import astronaut_with_human from "../assets/img/astronaut_and_rocket.gif";
 import Alert from "../components/ui/Alert";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
@@ -69,20 +70,7 @@ export default function Home() {
 						</div>
 					</PinContainer>
 				</div>
-				<div className=" text-white py-12">
-					<p className="text-center">
-						Site developed with{" "}
-						<span className="i-fa6-solid-heart text-xl text-red-500"></span>{" "}
-						by{" "}
-						<a
-							className="hover:underline"
-							href={"https://toby7002.dev/"}
-							target="_blank"
-						>
-							toby7002
-						</a>
-					</p>
-				</div>
+				<Footer />
 			</div>
 		</>
 	);

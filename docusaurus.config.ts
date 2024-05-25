@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import "dotenv/config";
 
 const config: Config = {
 	title: "Astralopedia",
@@ -33,7 +34,7 @@ const config: Config = {
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
-						"https://github.com/toby7002/Astralopedia/tree/main/",
+						"https://github.com/Astralopedia/Astralopedia/tree/main/",
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true,
 				},
@@ -72,56 +73,11 @@ const config: Config = {
 					label: "Planets",
 				},
 				{
-					href: "https://github.com/toby7002/Astralopedia",
+					href: "https://github.com/Astralopedia/Astralopedia",
 					label: "GitHub",
 					position: "right",
 				},
 			],
-		},
-		footer: {
-			style: "light",
-			links: [
-				{
-					title: "Docs",
-					items: [
-						{
-							label: "Introduction",
-							to: "docs",
-						},
-						{
-							label: "Guides",
-							to: "docs/guides/InfiniteLiquid",
-						},
-						{
-							label: "Chapters",
-							to: "docs/chapters/ComingSoon",
-						},
-						{
-							label: "Planets",
-							to: "docs/planets/ComingSoon",
-						},
-					],
-				},
-				{
-					title: "Community",
-					items: [
-						{
-							label: "Discord",
-							href: "https://discord.gg/mNeHyuZdqm",
-						},
-					],
-				},
-				{
-					title: "More",
-					items: [
-						{
-							label: "GitHub",
-							href: "https://github.com/toby7002/Astralopedia",
-						},
-					],
-				},
-			],
-			copyright: `Copyright © ${new Date().getFullYear()} toby7002. Built with Docusaurus.`,
 		},
 		prism: {
 			theme: prismThemes.github,
@@ -156,6 +112,11 @@ const config: Config = {
 			},
 		],
 	],
+	customFields: {
+		commit_ref: process.env.COMMIT_REF
+			? process.env.COMMIT_REF.substring(0, 7)
+			: "",
+	},
 };
 
 export default config;
