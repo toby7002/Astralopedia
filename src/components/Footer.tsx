@@ -1,4 +1,5 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import logo from "../assets/img/logo@240x135.png";
 
 export default function Footer() {
 	const {
@@ -8,7 +9,8 @@ export default function Footer() {
 		<div className="w-full bg-[#0E1826]">
 			<div className="p-10">
 				<div className="gap-5 grid place-content-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 text-center">
-					<div className=" hidden lg:grid grid-rows-5">
+					<div className=" hidden lg:grid grid-rows-5 place-items-center">
+						<img src={"/img/logo.png"} alt="logo" width={160} />
 						<p className="text-gray-300">
 							Astralopedia is{" "}
 							<a href="https://github.com/Astralopedia/Astralopedia">
@@ -16,7 +18,7 @@ export default function Footer() {
 							</a>
 						</p>
 						<p>
-							Astralopedia/astralopedia@
+							astralopedia/astralopedia@
 							<a
 								href={`https://github.com/Astralopedia/Astralopedia/commit/${customFields.commit_ref}`}
 							>

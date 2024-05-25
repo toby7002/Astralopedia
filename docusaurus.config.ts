@@ -48,7 +48,6 @@ const config: Config = {
 	themeConfig: {
 		// Replace with your project's social card
 		navbar: {
-			title: "Astralopedia",
 			logo: {
 				alt: "logo",
 				src: "img/logo.png",
