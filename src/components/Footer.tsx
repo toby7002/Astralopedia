@@ -5,7 +5,7 @@ export default function Footer() {
 		siteConfig: { customFields },
 	} = useDocusaurusContext();
 	return (
-		<div className="w-full bg-gray-950">
+		<div className="w-full bg-[#0E1826]">
 			<div className="p-10">
 				<div className="gap-5 grid place-content-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 text-center">
 					<div className=" hidden lg:grid grid-rows-5">

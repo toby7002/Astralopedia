@@ -25,3 +25,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+html[data-theme='dark'] {
+  --ifm-background-surface-color: #0E1826;
+}

@@ -16,7 +16,7 @@ export default function Home() {
 					<Vortex
 						backgroundColor="transparent"
 						rangeY={800}
-						particleCount={25}
+						particleCount={32}
 						baseHue={200}
 						className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
 					>
@@ -41,10 +41,10 @@ export default function Home() {
 						</div>
 					</Vortex>
 				</div>
-				<h1 className="text-3xl sm:text-5xl text-center text-white font-semibold mb-24">
+				<h1 className="text-3xl sm:text-5xl text-center text-white font-semibold mt-12">
 					Topics
 				</h1>
-				<div className="grid mb-24 grid-cols-1 gap-8 lg:grid-cols-3">
+				<div className="grid my-24 grid-cols-1 gap-8 lg:grid-cols-3">
 					<PinContainer
 						title="Guides"
 						href="docs/guides/InfiniteLiquid"
