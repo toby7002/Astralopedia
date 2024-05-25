@@ -44,7 +44,7 @@ export default function Home() {
 				<h1 className="text-3xl sm:text-5xl text-center text-white font-semibold mb-24">
 					Topics
 				</h1>
-				<div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+				<div className="grid mb-24 grid-cols-1 gap-8 lg:grid-cols-3">
 					<PinContainer
 						title="Guides"
 						href="docs/guides/InfiniteLiquid"
