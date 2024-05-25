@@ -14,13 +14,13 @@ export default function Alert() {
 	return (
 		<div
 			className={cn(
-				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2",
+				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2 border border-white border-solid rounded-2xl",
 				alertBox ? "block" : "hidden",
 			)}
 			style={{ transform: "translate(-50%, -50%)" }}
 		>
 			<div className="w-full">
-				<div className="absolute inset-0 h-full w-full bg-gradient-to-r from-white to-white transform scale-[0.90] blur-3xl" />
+				<div className="absolute inset-0 h-full w-full bg-gradient-to-r from-[#0E1826] to-[#0E1826] transform scale-[0.90] blur-3xl" />
 				<div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
 					<h1 className="font-semibold text-xl text-white mb-4 relative z-50">
 						Hi Astral,
