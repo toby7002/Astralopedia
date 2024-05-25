@@ -1,4 +1,4 @@
-import React, { useState, type ComponentProps } from "react";
+import React, { useEffect, useState, type ComponentProps } from "react";
 import clsx from "clsx";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import {
@@ -29,13 +29,15 @@ export default function NavbarLayout({ children }: Props): JSX.Element {
 	const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 	const [isScroll, setScroll] = useState<boolean>(false);
 
-	addEventListener("scroll", () => {
-		if (window.scrollY > 1) {
-			setScroll(true);
-		} else {
-			setScroll(false);
-		}
-	});
+	useEffect(() => {
+		addEventListener("scroll", () => {
+			if (typeof window !== undefined && window.scrollY > 1) {
+				setScroll(true);
+			} else {
+				setScroll(false);
+			}
+		});
+	}, []);
 
 	return (
 		<nav
