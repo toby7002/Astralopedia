@@ -1,21 +1,22 @@
+import { useAlertBoxStore } from "@site/src/pages";
 import cn from "@site/src/utils/cn";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Alert() {
-	const [alertBox, setAlertBox] = useState<boolean>(false);
+	const { setShowAlert, showAlert } = useAlertBoxStore();
 
 	useEffect(() => {
 		if (localStorage.getItem("showAlertBox") !== "false") {
-			setAlertBox(true);
+			setShowAlert(true);
 		}
-	});
+	}, []);
 
 	return (
 		<div
 			className={cn(
-				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2 border border-white border-solid rounded-2xl",
-				alertBox ? "block" : "hidden",
+				"fixed top-1/2 left-1/2 z-[1] w-3/4 md:w-1/2 border-white border-solid border-2 rounded-2xl",
+				showAlert ? "block" : "hidden",
 			)}
 			style={{ transform: "translate(-50%, -50%)" }}
 		>
@@ -35,15 +36,26 @@ export default function Alert() {
 						you are a person who like the wiki style.
 					</p>
 
-					<button
-						onClick={() => {
-							localStorage.setItem("showAlertBox", "false");
-							setAlertBox(false);
-						}}
-						className="border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-20 h-8"
-					>
-						Close
-					</button>
+					<div className="flex gap-3 flex-col sm:flex-row w-full">
+						{" "}
+						<button
+							onClick={() => {
+								setShowAlert(false);
+							}}
+							className="border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-full sm:w-auto h-8"
+						>
+							Close
+						</button>
+						<button
+							onClick={() => {
+								localStorage.setItem("showAlertBox", "false");
+								setShowAlert(false);
+							}}
+							className="border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-red-500 bg-red-600 duration-200 border-none sm:w-auto w-full h-8"
+						>
+							Don't show anymore
+						</button>
+					</div>
 					<Meteors number={28} />
 				</div>
 			</div>

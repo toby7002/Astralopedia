@@ -6,6 +6,17 @@ import portal from "../assets/img/portal.gif";
 import astronaut_with_human from "../assets/img/astronaut_and_rocket.gif";
 import Alert from "../components/ui/Alert";
 import Footer from "../components/Footer";
+import { create } from "zustand";
+
+interface AlertBoxState {
+	showAlert: boolean;
+	setShowAlert: (showAlert: boolean) => void;
+}
+
+export const useAlertBoxStore = create<AlertBoxState>()((set) => ({
+	showAlert: false,
+	setShowAlert: (showAlert: boolean) => set({ showAlert }),
+}));
 
 export default function Home() {
 	return (
@@ -20,9 +31,7 @@ export default function Home() {
 						baseHue={200}
 						className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
 					>
-						<h2 className="text-white text-3xl sm:text-7xl font-semibold text-center">
-							Astralopedia
-						</h2>
+						<img src="/img/logo.png" />
 						<p className="text-white text-xl sm:text-3xl max-w-2xl mt-6 text-center">
 							A guide and information database for the Create:
 							Astral modpack for Minecraft, written and maintained

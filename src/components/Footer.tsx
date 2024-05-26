@@ -1,10 +1,16 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import logo from "../assets/img/logo@240x135.png";
+
+import "../css/Footer.css";
+import { useAlertBoxStore } from "../pages";
 
 export default function Footer() {
 	const {
 		siteConfig: { customFields },
 	} = useDocusaurusContext();
+	const { showAlert, setShowAlert } = useAlertBoxStore();
+
+	console.log(showAlert);
+
 	return (
 		<div className="w-full bg-[#0E1826]">
 			<div className="p-10">
@@ -30,24 +36,31 @@ export default function Footer() {
 						<p className="text-gray-100 font-bold uppercase">
 							Resources
 						</p>
-						<a href="/docs" className="text-gray-300">
+						<a
+							href="/docs"
+							className="text-gray-300"
+							target="_blank"
+						>
 							Introduction
 						</a>
 						<a
 							href="/docs/guides/InfiniteLiquid"
 							className="text-gray-300"
+							target="_blank"
 						>
 							Guides
 						</a>
 						<a
 							href="/docs/chapters/ComingSoon"
 							className="text-gray-300"
+							target="_blank"
 						>
 							Chapters
 						</a>
 						<a
 							href="/docs/planets/ComingSoon"
 							className="text-gray-300"
+							target="_blank"
 						>
 							Planets
 						</a>
@@ -59,35 +72,53 @@ export default function Footer() {
 						<a
 							href="https://discord.gg/mNeHyuZdqm"
 							className="text-gray-300"
+							target="_blank"
 						>
 							Discord
+						</a>
+						<a
+							href="https://github.com/Astralopedia/Astralopedia"
+							className="text-gray-300 block lg:hidden"
+							target="_blank"
+						>
+							GitHub
 						</a>
 					</div>
 					<div className="hidden sm:grid grid-rows-5">
 						<p className="text-gray-100 font-bold uppercase">
 							Project
 						</p>
-						<a href="" className="text-gray-300">
+						<a href="" className="text-gray-300" target="_blank">
 							Contributing
 						</a>
 						<a
 							href="https://github.com/Astralopedia/Astralopedia/blob/main/LICENSE"
 							className="text-gray-300"
+							target="_blank"
 						>
 							License
 						</a>
 					</div>
 					<div className="hidden lg:grid grid-rows-5">
-						<button
-							className="w-32 font-semibold h-10 bg-gray-800 text-gray-400 cursor-pointer border-none rounded-xl hover:opacity-90"
-							onClick={() => {
-								localStorage.removeItem("showAlertBox");
-								window.location.reload();
-							}}
-						>
-							<span className="i-fa6-solid-circle-exclamation mr-1"></span>
-							<span>Show Popup</span>
-						</button>
+						<label className="inline-flex h-auto items-center cursor-pointer">
+							<input
+								type="checkbox"
+								value=""
+								className="sr-only peer"
+								checked={showAlert}
+								onChange={(e) => {
+									setShowAlert(e.target.checked);
+									localStorage.setItem(
+										"showAlertBox",
+										e.target.checked.toString(),
+									);
+								}}
+							/>
+							<div className="relative w-11 h-6 peer-focus:outline-none rounded-full peer bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#ad54eb]"></div>
+							<span className="ms-3 text-sm text-gray-400">
+								Show Popup
+							</span>
+						</label>
 					</div>
 				</div>
 				<div className="my-5">
