@@ -9,8 +9,6 @@ export default function Footer() {
 	} = useDocusaurusContext();
 	const { showAlert, setShowAlert } = useAlertBoxStore();
 
-	console.log(showAlert);
-
 	return (
 		<div className="w-full bg-[#0E1826]">
 			<div className="p-10">
