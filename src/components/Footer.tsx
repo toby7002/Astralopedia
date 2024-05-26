@@ -10,11 +10,16 @@ export default function Footer() {
 	const { showAlert, setShowAlert } = useAlertBoxStore();
 
 	return (
-		<div className="w-full bg-[#0E1826]">
+		<div className="w-full bg-[#0E1826] text-sm md:text-base">
 			<div className="p-10">
-				<div className="gap-5 grid place-content-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 text-center">
-					<div className=" hidden lg:grid grid-rows-5 place-items-center">
-						<img src={"/img/logo.png"} alt="logo" width={160} />
+				<div className="grid place-content-center grid-cols-3 lg:grid-cols-5 text-center">
+					<div className="grid place-items-center col-start-1 col-end-4 lg:col-start-1 lg:col-end-2 lg:grid-rows-5">
+						<img
+							src={"/img/logo.png"}
+							alt="logo"
+							width={160}
+							className="py-2"
+						/>
 						<p className="text-gray-300">
 							Astralopedia is{" "}
 							<a href="https://github.com/Astralopedia/Astralopedia">
@@ -30,74 +35,73 @@ export default function Footer() {
 							</a>
 						</p>
 					</div>
-					<div className=" grid grid-rows-5">
-						<p className="text-gray-100 font-bold uppercase">
-							Resources
-						</p>
-						<a
-							href="/docs"
-							className="text-gray-300"
-							target="_blank"
-						>
-							Introduction
-						</a>
-						<a
-							href="/docs/guides/InfiniteLiquid"
-							className="text-gray-300"
-							target="_blank"
-						>
-							Guides
-						</a>
-						<a
-							href="/docs/chapters/ComingSoon"
-							className="text-gray-300"
-							target="_blank"
-						>
-							Chapters
-						</a>
-						<a
-							href="/docs/planets/ComingSoon"
-							className="text-gray-300"
-							target="_blank"
-						>
-							Planets
-						</a>
+					<div className="grid grid-cols-3 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5">
+						<div className="grid grid-rows-5 gap-5">
+							<p className="text-gray-100 font-bold uppercase text-center">
+								Resources
+							</p>
+							<a
+								href="/docs"
+								className="text-gray-300"
+								target="_blank"
+							>
+								Introduction
+							</a>
+							<a
+								href="/docs/guides/InfiniteLiquid"
+								className="text-gray-300"
+								target="_blank"
+							>
+								Guides
+							</a>
+							<a
+								href="/docs/chapters/ComingSoon"
+								className="text-gray-300"
+								target="_blank"
+							>
+								Chapters
+							</a>
+							<a
+								href="/docs/planets/ComingSoon"
+								className="text-gray-300"
+								target="_blank"
+							>
+								Planets
+							</a>
+						</div>
+						<div className="grid grid-rows-5 grid-flow-col">
+							<p className="text-gray-100 font-bold uppercase text-center">
+								Community
+							</p>
+							<a
+								href="https://discord.gg/mNeHyuZdqm"
+								className="text-gray-300"
+								target="_blank"
+							>
+								Discord
+							</a>
+						</div>
+						<div className="grid grid-rows-5">
+							<p className="text-gray-100 font-bold uppercase text-center">
+								Project
+							</p>
+							<a
+								href=""
+								className="text-gray-300"
+								target="_blank"
+							>
+								Contributing
+							</a>
+							<a
+								href="https://github.com/Astralopedia/Astralopedia/blob/main/LICENSE"
+								className="text-gray-300"
+								target="_blank"
+							>
+								License
+							</a>
+						</div>
 					</div>
-					<div className=" grid grid-rows-5 grid-flow-col">
-						<p className="text-gray-100 font-bold uppercase">
-							Community
-						</p>
-						<a
-							href="https://discord.gg/mNeHyuZdqm"
-							className="text-gray-300"
-							target="_blank"
-						>
-							Discord
-						</a>
-						<a
-							href="https://github.com/Astralopedia/Astralopedia"
-							className="text-gray-300 block lg:hidden"
-							target="_blank"
-						>
-							GitHub
-						</a>
-					</div>
-					<div className="hidden sm:grid grid-rows-5">
-						<p className="text-gray-100 font-bold uppercase">
-							Project
-						</p>
-						<a href="" className="text-gray-300" target="_blank">
-							Contributing
-						</a>
-						<a
-							href="https://github.com/Astralopedia/Astralopedia/blob/main/LICENSE"
-							className="text-gray-300"
-							target="_blank"
-						>
-							License
-						</a>
-					</div>
-					<div className="hidden lg:grid grid-rows-5">
+					<div className="grid col-start-1 col-end-4 place-content-center lg:col-start-5 lg:col-end-6 lg:grid-rows-5">
 						<label className="inline-flex h-auto items-center cursor-pointer">
 							<input
 								type="checkbox"
@@ -119,7 +123,7 @@ export default function Footer() {
 						</label>
 					</div>
 				</div>
-				<div className="my-5">
+				<div className="pt-5">
 					<p className="text-center">
 						Site developed with{" "}
 						<span className="i-fa6-solid-heart text-xl text-red-500"></span>{" "}
