@@ -1,6 +1,5 @@
 # Install Bun
 
-`_skip if Bun is already installed_`  
 Following [Bun's installation instructions](https://bun.sh/docs/installation)
 
 # Install Docusaurus's dependencies
