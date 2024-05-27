@@ -13,6 +13,5 @@ written and maintained by the players.**
 
 ## Want to Contribute?
 
-Astralopedia is a collaborative wiki resource that is open for anyone to edit.
-You don't need special permission beyond creating an account to edit most pages,
-and your contributions can help the wiki grow and aid other players.
+You can follow this
+[guide](https://github.com/Astralopedia/Astralopedia/blob/main/CONTRIBUTING.md)
