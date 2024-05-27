@@ -1,9 +1,9 @@
 .docRoot {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .docsWrapper {
-  display: flex;
-  flex: 1 0 auto;
+	display: flex;
+	flex: 1 0 auto;
 }

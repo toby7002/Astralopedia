@@ -5,27 +5,27 @@
 @import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900);
 
 body {
-  font-family: 'Inter', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #c382f0;
-  --ifm-color-primary-dark: #ad54eb;
-  --ifm-color-primary-darker: #9727e5;
-  --ifm-color-primary-darkest: #7c17c2;
-  --ifm-color-primary-light: #d9b0f5;
-  --ifm-color-primary-lighter: #efddfb;
-  --ifm-color-primary-lightest: #ffffff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+	--ifm-color-primary: #c382f0;
+	--ifm-color-primary-dark: #ad54eb;
+	--ifm-color-primary-darker: #9727e5;
+	--ifm-color-primary-darkest: #7c17c2;
+	--ifm-color-primary-light: #d9b0f5;
+	--ifm-color-primary-lighter: #efddfb;
+	--ifm-color-primary-lightest: #ffffff;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .bg {
-  background-image: url("../assets/img/bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background-image: url('../assets/img/bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 html[data-theme='dark'] {
-  --ifm-background-surface-color: #0E1826;
+	--ifm-background-surface-color: #0e1826;
 }

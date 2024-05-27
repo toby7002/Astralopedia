@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { useDocsSidebar } from "@docusaurus/theme-common/internal";
-import BackToTopButton from "@theme/BackToTopButton";
-import DocRootLayoutSidebar from "@theme/DocRoot/Layout/Sidebar";
-import DocRootLayoutMain from "@theme/DocRoot/Layout/Main";
-import type { Props } from "@theme/DocRoot/Layout";
+import { useDocsSidebar } from '@docusaurus/theme-common/internal'
+import BackToTopButton from '@theme/BackToTopButton'
+import type { Props } from '@theme/DocRoot/Layout'
+import DocRootLayoutMain from '@theme/DocRoot/Layout/Main'
+import DocRootLayoutSidebar from '@theme/DocRoot/Layout/Sidebar'
+import { useState } from 'react'
 
-import styles from "./styles.module.css";
-import clsx from "clsx";
+import clsx from 'clsx'
+import styles from './styles.module.css'
 
 export default function DocRootLayout({ children }: Props): JSX.Element {
-	const sidebar = useDocsSidebar();
-	const [hiddenSidebarContainer, setHiddenSidebarContainer] = useState(false);
+	const sidebar = useDocsSidebar()
+	const [hiddenSidebarContainer, setHiddenSidebarContainer] = useState(false)
 	return (
-		<div className={clsx(styles.docsWrapper, "bg-[#0E1826]")}>
+		<div className={clsx(styles.docsWrapper, 'bg-[#0E1826]')}>
 			<BackToTopButton />
 			<div className={styles.docRoot}>
 				{sidebar && (
@@ -23,11 +23,10 @@ export default function DocRootLayout({ children }: Props): JSX.Element {
 					/>
 				)}
 				<DocRootLayoutMain
-					hiddenSidebarContainer={hiddenSidebarContainer}
-				>
+					hiddenSidebarContainer={hiddenSidebarContainer}>
 					{children}
 				</DocRootLayoutMain>
 			</div>
 		</div>
-	);
+	)
 }
