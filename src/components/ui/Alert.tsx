@@ -6,9 +6,7 @@ export default function Alert() {
 	const { setShowAlert, showAlert } = useAlertBoxStore()
 
 	useEffect(() => {
-		if (localStorage.getItem('showAlertBox') !== 'false') {
-			setShowAlert(true)
-		}
+		setShowAlert(localStorage.getItem('showAlertBox') !== 'false')
 	}, [])
 
 	return (
