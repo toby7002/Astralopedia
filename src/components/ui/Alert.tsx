@@ -28,10 +28,13 @@ export default function Alert() {
 					<p className='font-normal text-base text-slate-300 mb-4 relative z-50'>
 						Welcome to Astralopedia, this is an unofficial Create:
 						Astral wiki, maintained and developed by toby7002. The
-						main difference between Astralopedia and the official
-						wiki is their UI/UX. If you want a modern UI,
-						Astralopedia for you. The official wiki is for you if
-						you are a person who like the wiki style.
+						main difference between Astralopedia and the{' '}
+						<a href='https://createastral.wiki.gg/wiki/Create_Astral_Wiki'>
+							official wiki
+						</a>{' '}
+						is their UI/UX. If you want a modern UI, Astralopedia
+						for you. The official wiki is for you if you are a
+						person who like the wiki style.
 					</p>
 
 					<div className='flex gap-3 flex-col sm:flex-row w-full'>
