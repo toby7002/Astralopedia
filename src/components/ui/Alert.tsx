@@ -40,7 +40,7 @@ export default function Alert() {
 							onClick={() => {
 								setShowAlert(false)
 							}}
-							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-full sm:w-auto h-8'>
+							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-full sm:w-auto h-8 z-[1]'>
 							Close
 						</button>
 						<button
@@ -48,7 +48,7 @@ export default function Alert() {
 								localStorage.setItem('showAlertBox', 'false')
 								setShowAlert(false)
 							}}
-							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-red-500 bg-red-600 duration-200 border-none sm:w-auto w-full h-8'>
+							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-red-500 bg-red-600 duration-200 border-none sm:w-auto w-full h-8 z-[1]'>
 							Don't show anymore
 						</button>
 					</div>
