@@ -74,13 +74,19 @@ export default function Footer() {
 								target='_blank'>
 								Discord
 							</a>
+							<a
+								href='https://open.spotify.com/album/5z6NRIdWGJ6tpRC36mrxx3'
+								className='text-gray-300'
+								target='_blank'>
+								Spotify
+							</a>
 						</div>
 						<div className='grid grid-rows-5'>
 							<p className='text-gray-100 font-bold uppercase text-center'>
 								Project
 							</p>
 							<a
-								href=''
+								href='https://github.com/Astralopedia/Astralopedia/blob/main/CONTRIBUTING.md'
 								className='text-gray-300'
 								target='_blank'>
 								Contributing
