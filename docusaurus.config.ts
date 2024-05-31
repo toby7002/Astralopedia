@@ -50,7 +50,7 @@ const config: Config = {
 		navbar: {
 			logo: {
 				alt: 'logo',
-				src: 'img/logo.png',
+				src: 'img/logo.webp',
 			},
 			items: [
 				{

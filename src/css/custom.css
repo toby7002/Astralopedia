@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.bunny.net/css?family=inter:400,500,600,700);
 
-body {
-	font-family: 'Inter', sans-serif;
+@layer base {
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+	}
 }
 
 [data-theme='dark'] {
@@ -20,7 +22,7 @@ body {
 }
 
 .bg {
-	background-image: url('../assets/img/bg.png');
+	background-image: url('../assets/img/bg.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
