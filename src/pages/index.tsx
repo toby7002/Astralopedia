@@ -37,10 +37,8 @@ export default function Home() {
 							by the players.
 						</p>
 						<div className='flex items-center mt-6'>
-							<a
-								href='docs'
-								className='h-12 w-36 overflow-hidden'>
-								<span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#c382f0] text-lg font-medium text-white'>
+							<a href='docs' className='h-12 w-36'>
+								<span className='hover:brightness-110 duration-300 hover:scale-105 inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#c382f0] text-lg font-medium text-white'>
 									<span className='i-fa6-solid-rocket m-2'></span>
 									Explore
 								</span>
