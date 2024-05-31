@@ -15,7 +15,7 @@ export default function Footer() {
 				<div className='grid place-content-center grid-cols-3 lg:grid-cols-5 text-center'>
 					<div className='grid place-items-center col-start-1 col-end-4 lg:col-start-1 lg:col-end-2 lg:grid-rows-5'>
 						<img
-							src={'/img/logo.png'}
+							src={'/img/logo.webp'}
 							alt='logo'
 							width={160}
 							className='py-2'
