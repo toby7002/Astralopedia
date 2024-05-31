@@ -80,6 +80,12 @@ export default function Footer() {
 								target='_blank'>
 								Spotify
 							</a>
+							<a
+								href='https://www.curseforge.com/minecraft/modpacks/create-astral'
+								className='text-gray-300'
+								target='_blank'>
+								CurseForge
+							</a>
 						</div>
 						<div className='grid grid-rows-5'>
 							<p className='text-gray-100 font-bold uppercase text-center'>
