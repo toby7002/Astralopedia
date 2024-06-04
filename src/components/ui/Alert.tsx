@@ -1,9 +1,10 @@
-import { useAlertBoxStore } from '@site/src/pages'
+import { alertBoxAtom } from '@site/src/pages'
 import cn from '@site/src/utils/cn'
+import { useAtom } from 'jotai'
 import { useEffect } from 'react'
 
 export default function Alert() {
-	const { setShowAlert, showAlert } = useAlertBoxStore()
+	const [showAlert, setShowAlert] = useAtom(alertBoxAtom)
 
 	useEffect(() => {
 		setShowAlert(localStorage.getItem('showAlertBox') !== 'false')

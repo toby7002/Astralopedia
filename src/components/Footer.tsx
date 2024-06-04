@@ -1,13 +1,14 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 
+import { useAtom } from 'jotai'
 import '../css/Footer.css'
-import { useAlertBoxStore } from '../pages'
+import { alertBoxAtom } from '../pages'
 
 export default function Footer() {
 	const {
 		siteConfig: { customFields },
 	} = useDocusaurusContext()
-	const { showAlert, setShowAlert } = useAlertBoxStore()
+	const [showAlert, setShowAlert] = useAtom(alertBoxAtom)
 
 	return (
 		<div className='w-full bg-[#0E1826] text-sm md:text-base'>
