@@ -9,7 +9,7 @@ export default function Header() {
 				particleCount={32}
 				baseHue={200}
 				className='flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full'>
-				<img src='/img/logo.webp' width='719' height='94' />
+				<img src='/img/logo.webp' width='auto' height='auto' />
 				<p className='text-white text-xl sm:text-3xl max-w-2xl mt-6 text-center'>
 					A guide and information database for the Create: Astral
 					modpack for Minecraft, written and maintained by the
