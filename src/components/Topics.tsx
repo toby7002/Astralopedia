@@ -12,17 +12,21 @@ export default function Topics() {
 			<div className='grid my-24 grid-cols-1 gap-8 lg:grid-cols-3'>
 				<PinContainer title='Guides' href='docs/guides/InfiniteLiquid'>
 					<div className='flex basis-full flex-col p-4  sm:basis-1/2 w-[20rem] h-[20rem] '>
-						<img src={telescope} alt='icon' loading="lazy" />
+						<img src={telescope} alt='icon' loading='lazy' />
 					</div>
 				</PinContainer>
 				<PinContainer title='Chapters' href='docs/chapters/ComingSoon'>
 					<div className='flex basis-full flex-col p-4 sm:basis-1/2 w-[20rem] h-[20rem] '>
-						<img src={astronaut_with_human} alt='icon' loading="lazy" />
+						<img
+							src={astronaut_with_human}
+							alt='icon'
+							loading='lazy'
+						/>
 					</div>
 				</PinContainer>
 				<PinContainer title='Planets' href='docs/planets/ComingSoon'>
 					<div className='flex basis-full flex-col p-4 sm:basis-1/2 w-[20rem] h-[20rem] '>
-						<img src={portal} alt='icon' loading="lazy" />
+						<img src={portal} alt='icon' loading='lazy' />
 					</div>
 				</PinContainer>
 			</div>
