@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Cables
 
-<img src='https://cdn.toby7002.dev/Astralinium/cdf2efea-90f2-47f7-bb17-84ac7646a85e_cables.png' />
+<img src='https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@master/images/ae2/cables.png' />
 
 Cables are main component of network, as they are responsible for connecting
 devices and carrying channels.  
@@ -30,7 +30,7 @@ color.
 
 ## Cable anchors
 
-<img src='https://cdn.toby7002.dev/Astralinium/cdf2efea-90f2-47f7-bb17-84ac7646a85e_cable_anchors.png' />
+<img src='https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@master/images/ae2/cable_anchors.png' />
 
 Cable anchors can be used to prevent cables from connecting to each other;
 useful for managing subnetworks or decorating.

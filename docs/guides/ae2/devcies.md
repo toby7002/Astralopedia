@@ -8,7 +8,7 @@ Key component of ME network is devices that are connected to it.
 
 ## ME Drive and ME Chest
 
-<img src="https://cdn.toby7002.dev/Astralinium/cdf2efea-90f2-47f7-bb17-84ac7646a85e_me_chest_and_drive.png" />
+<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@master/images/ae2/me_chest_and_drive.png" />
 
 ME Drive and ME Chest are means of making storage cells available to network;
 drive features 10 slots, while chest has built-in interface for interacting with
@@ -16,7 +16,7 @@ cell inserted into it.
 
 ## Storage bus
 
-<img src="https://cdn.toby7002.dev/Astralinium/cdf2efea-90f2-47f7-bb17-84ac7646a85e_storage_bus.png" />
+<img src="https://cdn.jsdelivr.net/gh/Astralopedia/astralopedia-assets@master/images/ae2/storage_bus.png" />
 
 Similarly to ME Drive and ME Chest, this device's purpose is adding storage;
 unlike previously mentioned blocks, this is one of many _panels_ - devices
