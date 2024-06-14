@@ -2,7 +2,7 @@ import { Vortex } from './ui/Vortex'
 
 export default function Header() {
 	return (
-		<div className='w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden'>
+		<header className='w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden'>
 			<Vortex
 				backgroundColor='transparent'
 				rangeY={800}
@@ -24,6 +24,6 @@ export default function Header() {
 					</a>
 				</div>
 			</Vortex>
-		</div>
+		</header>
 	)
 }

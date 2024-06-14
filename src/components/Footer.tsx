@@ -11,7 +11,7 @@ export default function Footer() {
 	const [showAlert, setShowAlert] = useAtom(alertBoxAtom)
 
 	return (
-		<div className='w-full bg-[#0E1826] text-sm md:text-base'>
+		<footer className='w-full bg-[#0E1826] text-sm md:text-base'>
 			<div className='p-10'>
 				<div className='grid place-content-center grid-cols-3 lg:grid-cols-5 text-center'>
 					<div className='grid place-items-center col-start-1 col-end-4 lg:col-start-1 lg:col-end-2 lg:grid-rows-5'>
@@ -142,6 +142,6 @@ export default function Footer() {
 					</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }
