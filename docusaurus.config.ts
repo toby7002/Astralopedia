@@ -72,6 +72,11 @@ const config: Config = {
 					label: 'Planets',
 				},
 				{
+					type: 'docsVersionDropdown',
+					position: 'right',
+					dropdownActiveClassDisabled: true,
+				},
+				{
 					href: 'https://github.com/Astralopedia/Astralopedia',
 					label: 'GitHub',
 					position: 'right',

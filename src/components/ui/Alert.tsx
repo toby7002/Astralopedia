@@ -18,7 +18,7 @@ export default function Alert() {
 			)}
 			style={{ transform: 'translate(-50%, -50%)' }}>
 			<div className='w-full'>
-				<div className='absolute inset-0 h-full w-full bg-gradient-to-r from-[#0E1826] to-[#0E1826] transform scale-[0.90] blur-3xl' />
+				<div className='absolute inset-0 h-full w-full bg-[#0E1826] transform scale-[0.90] blur-3xl' />
 				<div className='relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start'>
 					<h1 className='font-semibold text-xl text-white mb-4 relative z-50'>
 						Hi Astral,
@@ -42,7 +42,7 @@ export default function Alert() {
 							onClick={() => {
 								setShowAlert(false)
 							}}
-							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:bg-[#c382f0] bg-[#ad54eb] duration-200 border-none w-full sm:w-auto h-8 z-[1]'>
+							className='text-white border px-4 py-1 text-md font-semibold rounded-lg cursor-pointer hover:brightness-110 bg-[#7F16CA] duration-200 border-none w-full sm:w-auto h-8 z-[1]'>
 							Close
 						</button>
 						<button

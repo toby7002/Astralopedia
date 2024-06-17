@@ -23,7 +23,9 @@ export default function Footer() {
 						/>
 						<p className='text-gray-300'>
 							Astralopedia is{' '}
-							<a href='https://github.com/Astralopedia/Astralopedia'>
+							<a
+								href='https://github.com/Astralopedia/Astralopedia'
+								className='text-[#C88CF2]'>
 								open source
 							</a>
 						</p>
@@ -134,7 +136,7 @@ export default function Footer() {
 						<span className='i-fa6-solid-heart text-xl text-red-500'></span>{' '}
 						by{' '}
 						<a
-							className='hover:underline'
+							className='hover:underline text-[#C88CF2]'
 							href={'https://toby7002.dev/'}
 							target='_blank'>
 							toby7002
